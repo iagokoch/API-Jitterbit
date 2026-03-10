@@ -1,0 +1,160 @@
+{
+  "info": {
+    "_postman_id": "e8432e7c-7ee7-48df-a5da-65234b8a20a2",
+    "name": "Desafio Jitterbit",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45101858"
+  },
+  "item": [
+    {
+      "name": "Criar Pedido (POST)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"numeroPedido\": \"v10089016vdb\",\r\n  \"valorTotal\": 10000,\r\n  \"dataCriacao\": \"2023-07-19T12:24:11.5299601+00:00\",\r\n  \"items\": [\r\n    {\r\n      \"idItem\": \"2434\",\r\n      \"quantidadeItem\": 1,\r\n      \"valorItem\": 1000\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/order",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "order"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Pedidos (GET)",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/order/list",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "order",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Pedido (GET)",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/order/v10089016vdb",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "order",
+            "v10089016vdb"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Pedido (PUT)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"numeroPedido\": \"v10089016vdb\",\r\n  \"valorTotal\": 15000,\r\n  \"dataCriacao\": \"2023-07-19T12:24:11.529Z\",\r\n  \"items\": [\r\n    {\r\n      \"idItem\": \"2434\",\r\n      \"quantidadeItem\": 2,\r\n      \"valorItem\": 7500\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/order/v10089016vdb",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "order",
+            "v10089016vdb"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Pedido (DELETE)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/order/v10089016vdb",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "order",
+            "v10089016vdb"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
